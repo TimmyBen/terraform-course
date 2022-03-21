@@ -1,0 +1,5 @@
+terraform init
+terraform validate
+terraform plan -varfile=terraform.tfvars -out m3.tfplan
+terraform apply "m3.tfplan"
+terraform destroy
